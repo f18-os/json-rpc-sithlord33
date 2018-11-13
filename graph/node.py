@@ -1,3 +1,4 @@
+import json
 
 class node:
     def __init__(self, name, children = []):
@@ -13,4 +14,3 @@ def increment(graph):
     graph.val += 1;
     for c in graph.children:
         increment(c)
-

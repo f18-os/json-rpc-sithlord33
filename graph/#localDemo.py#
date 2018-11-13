@@ -17,7 +17,7 @@ def out(graph, gList = {}):
 def Jstring(graph):
     gList = out(graph)
     file = open("json.request","w")
-    result = json.dumps(gList)
+    result = json.dumps(myDict)
     file.write(result)
     return result
 

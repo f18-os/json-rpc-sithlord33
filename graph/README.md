@@ -1,3 +1,5 @@
+##Ricardo Jimenez Todd##
+
 This directory includes 
 
 * `node.py`: which
@@ -13,3 +15,15 @@ Your tasks are
   * a client that demonstrates the effect of `increment()` being remotely executed on the graph from localDemo.py.
   * a file named `request.json` containing a the manually genrated contents of jsonrpc request to `increment()`
    equivalent to the one produced by your client.   You should use nc to confirm that it's correct.
+
+*`localDemo.py`: contains the functions to transform a python object to a JSON
+*object and viceversa.
+
+*`node.py`: contains the basic structure of a tree node.
+
+*`jserver.py`: listens on a certain port and recieves a tree encoded as a JSON
+ object. Decodes it and increments 1 to every node, then re encodes it to a
+ JSON object and sends it back.
+
+*`jclient.py`: builds a small tree and encodes it as a JSON object, connects
+ to a server on a certain port and sends the JSON object.
