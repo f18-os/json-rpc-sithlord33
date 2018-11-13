@@ -1,3 +1,4 @@
+
 class node:
     def __init__(self, name, children = []):
         self.name = name
